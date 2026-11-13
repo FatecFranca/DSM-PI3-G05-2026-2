@@ -1,0 +1,137 @@
+Use TechVagas;
+
+db.usuario.insertMany({
+    _id: ObjectId('6af66facd29adedca57bf54b'),
+    nome: 'Ana Souza',
+    email: 'ana.souza@fatec.br',
+    senha: '$2a$10$ExemploHashBcryptSeguro...',
+    tipo: 'ALUNO',
+    status: 'A',
+    dataCadastro: '2026-11-12',
+    perfis: [
+      {
+        cursos: [
+          'Análise e Desenvolvimento de Sistemas'
+        ],
+        habilidades: [
+          'Java',
+          'Spring Boot',
+          'MongoDB'
+        ],
+        experiencias: [
+          'Estagiária de TI'
+        ],
+        gitHub: 'https://github.com/anasouza'
+      }
+    ],
+    depoimentos: [
+      {
+        texto: 'Plataforma excelente para conseguir oportunidades!',
+        dataDepoimento: '2026-11-01'
+      }
+    ]
+  }
+  {
+    _id: ObjectId('6af676ccd29adedca57bf54e'),
+    nome: 'Carlos Silva',
+    email: 'carlos.recrutador@techsolutions.com.br',
+    senha: '$2a$10$ExemploHashBcryptSeguro...',
+    tipo: 'RECRUTADOR',
+    status: 'A',
+    dataCadastro: '2026-11-12',
+    perfis: [
+      {
+        cursos: [
+          'Gestão de Recursos Humanos',
+          'Psicologia Organizacional'
+        ],
+        habilidades: [
+          'Tech Recruiting',
+          'Entrevistas Técnicas',
+          'Gestão de Talentos'
+        ],
+        experiencias: [
+          'Tech Recruiter Sênior na Tech Solutions Brasil'
+        ],
+        gitHub: 'https://github.com/carlosrecrutador'
+      }
+    ],
+    depoimentos: [
+      {
+        texto: 'Ótima ferramenta para encontrar talentos da Fatec!',
+        dataDepoimento: '2026-11-12'
+      }
+    ]
+  }
+)
+
+db.vaga.insertOne(
+  {
+    _id: ObjectId('6af67898d29adedca57bf54f'),
+    titulo: 'Desenvolvedor Java Júnior',
+    descricao: 'Atuar no desenvolvimento de microsserviços e APIs REST.',
+    tipo: 'Emprego',
+    requisitos: [
+      'Java 17+',
+      'Spring Boot',
+      'MongoDB'
+    ],
+    salario: 4000,
+    dataPublicacao: '2026-11-12',
+    usuarioId: '6af676ccd29adedca57bf54e',
+    empresaId: '6af673b1d29adedca57bf54d'
+  }
+)
+
+db.empresa.insertOne(
+  {
+    _id: ObjectId('6af673b1d29adedca57bf54d'),
+    nome: 'Tech Solutions Brasil',
+    missao: 'Transformar negócios através da tecnologia e inovação.',
+    valores: [
+      'Inovação',
+      'Transparência',
+      'Colaboração'
+    ],
+    expectativas: [
+      'Profissionais proativos e focados em resultados.'
+    ]
+  }
+)
+
+de.candidatura.insertOne(
+  {
+    _id: ObjectId('6af679ebd29adedca57bf550'),
+    usuarioId: '6af66facd29adedca57bf54b',
+    vagaId: '6af67898d29adedca57bf54f',
+    dataCandidatura: '2026-11-12',
+    status: 'Em análise',
+    historicoStatus: [
+      'Inscrito',
+      'Em análise'
+    ]
+  }
+)
+
+db.conversa.insertOne(
+  {
+    _id: ObjectId('6af67a83d29adedca57bf551'),
+    participantesId: [
+      '6af676ccd29adedca57bf54e',
+      '6af66facd29adedca57bf54b'
+    ],
+    ultimaMensagem: 'Olá, gostaria de saber mais sobre a vaga.',
+    ultimaAtualizacao: '2026-11-12T10:30:00'
+  }
+)
+
+db.mensagem.insertOne(
+  {
+    _id: ObjectId('6af67c38d29adedca57bf552'),
+    conversaId: '6af67a83d29adedca57bf551',
+    remetenteId: '6af66facd29adedca57bf54b',
+    conteudo: 'Olá, gostaria de saber mais sobre a vaga.',
+    dataEnvio: '2026-11-12T10:30:00',
+    status: 'NÃO LIDO'
+  }
+)
