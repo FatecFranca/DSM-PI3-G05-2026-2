@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutador</title>
+    <link rel="stylesheet" href="../static/style/navbar-footer.css">
+    <link rel="stylesheet" href="../static/style/novo-recrutador.css">
+</head>
+
+<body>
+
+    <header class="header-pi">
+        <div class="header-pi-logo">
+            <img src="../static/imagens/teste-logo-3.png" alt="Computador / Arquivos">
+            <p class="header-pi-title">
+                <span class="projeto">Projeto</span>
+                <span class="fatec">Fatec</span>
+            </p>
+        </div>
+
+        <div class="header-pi-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="vagas.html">Vagas</a>
+                <a href="depoimentos.html">Depoimentos</a>
+            </nav>
+        </div>
+
+        <div class="user-menu">
+            <input type="checkbox" id="user-toggle">
+
+            <label for="user-toggle" class="user"></label>
+
+            <label for="user-toggle" class="overlay"></label>
+
+            <div class="dropdown">
+                <a href="login.html" id="btnLogin">Log In</a>
+                <a href="area-logada.html" id="btnPerfil">Perfil</a>
+                <a href="#" id="btnSair">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cadastrar Recrutador</h1>
+
+        <form action="#" class="new-company">
+
+            <div class="new-comp-data">
+                <label for="text">Razão Social:</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">Nome:</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">CNPJ</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">Nome do Responsável Recrutamento</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">Senha:</label>
+                <input type="password">
+            </div>
+
+            <h2>Endereço Profissional</h2>
+
+            <div class="new-comp-data">
+                <label for="text">CEP:</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">Logradouro:</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">Número:</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">Complemento:</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">Bairro:</label>
+                <input type="text">
+            </div>
+
+            <div class="new-comp-data">
+                <label for="text">Estado:</label>
+                <!-- <input type="text" class="usr-estado" id="estado-usr"> -->
+                <select name="" class="usr-estado" id="estado-newRecrutador">
+                    <option value="AC">AC - Acre</option>
+                    <option value="AL">AL - Alagoas</option>
+                    <option value="AP">AP - Amapá</option>
+                    <option value="AM">AM - Amazonas</option>
+                    <option value="BA">BA - Bahia</option>
+                    <option value="CE">CE - Ceará</option>
+                    <option value="ES">ES - Espírito Santo</option>
+                    <option value="GO">GO - Goiás</option>
+                    <option value="MA">MA - Maranhão</option>
+                    <option value="MT">MT - Mato Grosso</option>
+                    <option value="MT">MT - Mato Grosso do Sul</option>
+                    <option value="MG">MG - Minas Gerais</option>
+                    <option value="PA">PA - Pará</option>
+                    <option value="PB">PB - Paraíba</option>
+                    <option value="PR">PR - Paraná</option>
+                    <option value="PE">PE - Pernambuco</option>
+                    <option value="PI">PI - Piauí</option>
+                    <option value="RJ">RJ - Rio de Janeiro</option>
+                    <option value="RN">RN - Rio Grande do Norte</option>
+                    <option value="RS">RS - Rio Grande do Sul</option>
+                    <option value="RO">RO - Rondônia</option>
+                    <option value="RR">RR - Roraima</option>
+                    <option value="SC">SC - Santa Catarina</option>
+                    <option value="SP" selected>SP - São Paulo</option>
+                    <option value="SE">SE - Sergipe</option>
+                    <option value="TO">TO - Tocantins</option>
+                </select>
+            </div>
+
+            <div class="new-comp-btns">
+                <button type="submit">Cadastrar</button>
+                <button type="button" onclick="cancelNewrecrutador()">Cancelar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <footer class="footer-pi">
+        <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
+    </footer>
+
+    <!-- <script src="../js/salvarLocalStorage.js"></script> -->
+    <script src="../static/js/login.js"></script>
+    <script src="../static/js/app.js"></script>
+    <script src="../static/js/logout.js"></script>
+    <script src="../static/js/cancel-newRecrutador.js"></script>
+
+</body>
+
+</html>
+
+<!-- 
+dados para recrutador
+
+1. Informações Pessoais (Básicas)
+• Nome completo
+• CPF (ou documento de identificação equivalente)
+• Data de nascimento
+• E-mail (preferencialmente corporativo)
+• Telefone / Celular (com DDD)
+
+2. Informações Profissionais e Corporativas
+
+• Cargo / Função (Ex: Recrutador Júnior, Headhunter, Analista de RH)
+• Área de atuação (Ex: Tecnologia, Vendas, Geral, Executivo)
+• Vínculo empregatício (Ex: CLT, PJ, Terceirizado, Interno vs. Consultoria externa)
+• Empresa / Organização (Caso pertença a uma consultoria ou a um setor específico de uma companhia)
+• Gestor ou Unidade Responsável (Se aplicável, para fins de alçada e aprovação de vagas)
+
+3. Acesso e Permissões (Segurança do Sistema)
+
+• E-mail de login (se diferente do e-mail de contato)
+• Senha / Status da conta (Ativo, Bloqueado)
+• Nível de acesso / Perfil (Ex: Administrador, Recrutador Padrão, Visualizador/Gestor de área)
+• Assinatura digital ou nome de exibição (Como o nome aparece para os candidatos nas mensagens automáticas)
+
+4. Informações Opcionais / Complementares
+
+• Link para o perfil do LinkedIn (Muito comum para networking e validação profissional)
+• Escolaridade (Ex: Graduação em Psicologia, Administração, Gestão de RH)
+• Idiomas (Caso faça processos seletivos internacionais ou trilíngues)
+• Idiomas de preferência para notificação (Português, Inglês, etc.
+-->

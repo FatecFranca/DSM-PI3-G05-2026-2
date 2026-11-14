@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin: 7px;
+}
+
+.newcandidate {
+    /* height: 76vh; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .newcandidate-data {
+    border: 1px solid blue;
+} */
+
+select {
+    text-align: center;
+}
+
+.newcandidate-dt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+}
+
+.data-newcandidate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+}
+
+.btns-data-newcandidate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.btns-data-newcandidate button {
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 1.1rem;
+}

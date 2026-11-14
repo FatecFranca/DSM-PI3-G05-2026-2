@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Usuário</title>
+    <link rel="stylesheet" href="../static/style/navbar-footer.css">
+    <link rel="stylesheet" href="../static/style/newcandidate.css">
+</head>
+
+<body>
+
+    <header class="header-pi">
+        <div class="header-pi-logo">
+            <img src="../static/imagens/teste-logo-3.png" alt="Computador / Arquivos">
+            <p class="header-pi-title">
+                <span class="projeto">Projeto</span>
+                <span class="fatec">Fatec</span>
+            </p>
+        </div>
+
+        <div class="header-pi-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="vagas.html">Vagas</a>
+                <a href="depoimentos.html">Depoimentos</a>
+            </nav>
+        </div>
+
+        <div class="user-menu">
+            <input type="checkbox" id="user-toggle">
+
+            <label for="user-toggle" class="user"></label>
+
+            <label for="user-toggle" class="overlay"></label>
+
+            <div class="dropdown">
+                <a href="login.html" id="btnLogin">Log In</a>
+                <a href="area-logada.html" id="btnPerfil">Perfil</a>
+                <a href="#" id="btnSair">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="newcandidate">
+        <form action="#" class="newcandidate-data">
+            <h2>Cadastro de Usuários</h2>
+
+            <div class="newcandidate-dt">
+                <label for="text">Qual o seu usuário?</label>
+                <select name="typeUser" id="typeUser">
+                    <option value="">Selecione</option>
+                    <option value="aluno">Aluno</option>
+                    <option value="exaluno">Ex-aluno</option>
+                    <option value="recrutador">Recrutador</option>
+                    <option value="especialista">Especialista</option>
+                </select>
+            </div>
+
+            <div class="newcandidate-dt">
+                <label for="text">Nome:</label>
+                <input type="text" id="nome">
+            </div>
+
+            <div class="newcandidate-dt">
+                <label for="text">Email:</label>
+                <input type="text" id="email">
+            </div>
+
+            <div class="newcandidate-dt">
+                <label for="text">Senha:</label>
+                <input type="text" id="senha">
+            </div>
+
+            <!-- Aluno -->
+
+            <div class="newcandidate-dt grupo-aluno">
+                <label for="text">Curso:</label>
+                <select name="selectCourse" id="selectCourseUser">
+                    <option value="">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="">Desenvolvimento de Software Multiplataforma</option>
+                    <option value="">Gestão da Produção Industrial</option>
+                    <option value="">Gestão de Recursos Humanos</option>
+                    <option value="">Gestão Empresarial</option>
+                </select>
+            </div>
+
+            <div class="newcandidate-dt grupo-aluno">
+                <label for="text">Instituição:</label>
+                <input type="text" id="instituicao">
+            </div>
+
+            <div class="newcandidate-dt grupo-aluno">
+                <label for="text">Semestre:</label>
+                <select name="" id="">
+                    <option>1º Semestre</option>
+                    <option>2º Semestre</option>
+                    <option>3º Semestre</option>
+                    <option>4º Semestre</option>
+                    <option>5º Semestre</option>
+                    <option>6º Semestre</option>
+                </select>
+            </div>
+
+            <div class="newcandidate-dt grupo-aluno">
+                <label for="text">Turno:</label>
+                <select name="selectTurno" id="selectTurnoCourse">
+                    <option value="manha">Manhã</option>
+                    <option value="noite">Noite</option>
+                    <option value="ead">EAD</option>
+                </select>
+            </div>
+
+            <div class="newcandidate-dt grupo-aluno">
+                <label for="text">Data Inicio:</label>
+                <input type="date" id="dataInicio">
+            </div>
+
+            <div class="newcandidate-dt grupo-aluno">
+                <label for="text">Data Fim:</label>
+                <input type="date" id="dataFim">
+            </div>
+
+            <!-- Recrutador -->
+            <div class="newcandidate-dt grupo-recrutador">
+                <label for="text">Razão Social:</label>
+                <input type="text" id="razaoSocial">
+            </div>
+
+            <div class="newcandidate-dt grupo-recrutador">
+                <label for="text">Nome Fantasia:</label>
+                <input type="text" id="nomeFantasia">
+            </div>
+
+            <div class="newcandidate-dt grupo-recrutador">
+                <label for="text">CNPJ:</label>
+                <input type="text" id="cnpj">
+            </div>
+
+            <div class="newcandidate-dt grupo-recrutador">
+                <label for="text">Responsável pelo recrutamento:</label>
+                <input type="text" id="responsavel">
+            </div>
+
+            <!-- Especialista -->
+            <div class="newcandidate-dt grupo-especialista">
+                <label for="text">Formação</label>
+                <input type="text" id="formacao">
+            </div>
+
+            <h2>Endereço</h2>
+
+            <div class="data-newcandidate">
+                <label for="text">CEP:</label>
+                <input type="text" id="cep">
+            </div>
+
+            <div class="data-newcandidate">
+                <label for="text">Logradouro:</label>
+                <input type="text" id="logradouro">
+            </div>
+
+            <div class="data-newcandidate">
+                <label for="text">Número:</label>
+                <input type="text" id="numero">
+            </div>
+
+            <div class="data-newcandidate">
+                <label for="text">Complemento:</label>
+                <input type="text" id="complemento">
+            </div>
+
+            <div class="data-newcandidate">
+                <label for="text">Bairro:</label>
+                <input type="text" id="bairro">
+            </div>
+
+            <div class="data-newcandidate">
+                <label for="text">Estado:</label>
+                <!-- <input type="text" class="usr-estado" id="estado-usr"> -->
+                <select name="estados" class="usr-estado" id="estado-newUser">
+                    <option value="AC">AC - Acre</option>
+                    <option value="AL">AL - Alagoas</option>
+                    <option value="AP">AP - Amapá</option>
+                    <option value="AM">AM - Amazonas</option>
+                    <option value="BA">BA - Bahia</option>
+                    <option value="CE">CE - Ceará</option>
+                    <option value="ES">ES - Espírito Santo</option>
+                    <option value="GO">GO - Goiás</option>
+                    <option value="MA">MA - Maranhão</option>
+                    <option value="MT">MT - Mato Grosso</option>
+                    <option value="MT">MT - Mato Grosso do Sul</option>
+                    <option value="MG">MG - Minas Gerais</option>
+                    <option value="PA">PA - Pará</option>
+                    <option value="PB">PB - Paraíba</option>
+                    <option value="PR">PR - Paraná</option>
+                    <option value="PE">PE - Pernambuco</option>
+                    <option value="PI">PI - Piauí</option>
+                    <option value="RJ">RJ - Rio de Janeiro</option>
+                    <option value="RN">RN - Rio Grande do Norte</option>
+                    <option value="RS">RS - Rio Grande do Sul</option>
+                    <option value="RO">RO - Rondônia</option>
+                    <option value="RR">RR - Roraima</option>
+                    <option value="SC">SC - Santa Catarina</option>
+                    <option value="SP" selected>SP - São Paulo</option>
+                    <option value="SE">SE - Sergipe</option>
+                    <option value="TO">TO - Tocantins</option>
+                </select>
+            </div>
+
+            <div class="btns-data-newcandidate">
+                <button type="submit">Cadastrar</button>
+                <button type="button" onclick="cancelNewCandidate()">Cancelar</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="footer-pi">
+        <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
+    </footer>
+
+    <script src="../static/js/cancel-newcandidate.js"></script>
+    <script src="../static/js/newCandidate.js"></script>
+</body>
+
+</html>
