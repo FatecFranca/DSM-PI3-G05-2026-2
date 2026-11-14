@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4d4d4;
+}
+
+/* main {
+    height: 76vh;
+} */
+
+h1 {
+    text-align: center;
+    margin: 10px;
+
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.new-company {
+    margin: 5px;
+    /* border: 1px solid red; */
+} 
+
+.new-comp-data {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.new-comp-data label {
+    margin: 5px;
+}
+
+.new-comp-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.new-comp-btns button {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+}

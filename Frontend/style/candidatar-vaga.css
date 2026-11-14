@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.candidate-page {
+    min-height: 76vh;
+    padding: 30px 5%;
+    background-color: #f5f5f5;
+}
+
+.candidate-page h1 {
+    text-align: center;
+    color: #b20000;
+    margin-bottom: 30px;
+}
+
+.candidate-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* INFORMAÇÕES DA VAGA */
+
+.job-details {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-details h2 {
+    color: #b20000;
+    margin-bottom: 20px;
+}
+
+.job-details h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.job-details p {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.job-details ul {
+    padding-left: 25px;
+}
+
+.job-details li {
+    margin-bottom: 8px;
+}
+
+#btnCandidatar {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+
+    background-color: #b20000;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#btnCandidatar:hover {
+    background-color: #850000;
+}
+
+.btnVoltarVagas {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+
+    background-color: #b20000;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .candidate-container {
+        grid-template-columns: 1fr;
+    }
+
+    .candidate-page {
+        padding: 20px 4%;
+    }
+
+}
+
+/* chat  */
+
+.chat-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 550px;
+    overflow: hidden;
+}
+
+/* CABEÇALHO DO CHAT */
+
+.chat-header {
+    background-color: #b20000;
+    color: white;
+    padding: 20px;
+}
+
+.chat-header h2 {
+    font-size: 1.3rem;
+}
+
+.chat-header p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* MENSAGENS */
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    max-width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.message p {
+    margin-bottom: 5px;
+}
+
+.message span {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.received {
+    background-color: #e8e8e8;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #f3cccc;
+    align-self: flex-end;
+}
+
+/* CAMPO DE ENVIO */
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 12px 18px;
+
+    background-color: #b20000;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #850000;
+}
